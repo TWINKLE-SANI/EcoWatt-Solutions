@@ -1,0 +1,683 @@
+/* Save this as styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b16161;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #9e380c;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #852114;
+}
+
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #a93f12;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Save this as styles.css */
+
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e68f75;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login box styles */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Input fields styling */
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #c1461d;
+    outline: none;
+}
+
+/* Button styles */
+.btn-login {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #dd3d11;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #7d2918;
+}
+
+/* Back link styles */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #c0310e;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+/* Save this as styles.css */
+
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login box styles */
+.login-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 26px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Input fields styling */
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #a9260c;
+    outline: none;
+}
+
+/* Button styles */
+.btn-login {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #c4380d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #b1461b;
+}
+
+/* Back link styles */
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #a53618;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f8fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+}
+
+/* Main content styling */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+/* Select box styling */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #ca380f;
+    outline: none;
+}
+
+/* Proceed button styling */
+input[type="button"] {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ca4523;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #d1300b;
+}
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section styling */
+.section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section title styling */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #D84315; /* Orange-Red */
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Container styling */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Form styling */
+.signup-form {
+    background-color: rgba(255, 87, 34, 0.05); /* Light Orange-Red background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields styling */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    border-color: #D84315; /* Orange-Red */
+    outline: none;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #D84315; /* Orange-Red */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #BF360C; /* Darker Orange-Red */
+}
+
+/* Message styling */
+.loading, .error-message, .sent-message {
+    display: none;
+}
+
+.loading {
+    color: #D84315; /* Orange-Red */
+}
+
+.error-message {
+    color: #ff0000;
+}
+
+.sent-message {
+    color: #D84315; /* Orange-Red */
+}
+/* Styling for the Sign Up link */
+.signup-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 14px;
+    color: #ffffff; /* White text color */
+    background-color: transparent; /* Transparent background */
+    padding: 5px 10px;
+    border: 2px solid #000000; /* Black border */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-link a:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #ffffff; /* White text color on hover */
+}
+/* Ensuring the hero image fits well */
+img[data-aos="fade-in"] {
+    width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust max-height as needed */
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block;
+    margin: 0 auto;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #D84315; /* Orange-Red */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #ff6f61; /* Orange-red shade */
+    color: white;
+    padding: 10px 0;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-weight: bolder;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+.market-summary, .stock-view {
+    background-color: #1a1a1a; /* Darker gray for contrast */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.market-summary h2, .stock-view h2 {
+    margin-top: 0;
+}
+
+.graph {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.graph img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: #ff6f61; /* Orange-red shade */
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #333; /* Darker gray for even rows */
+}
+
+table tbody tr:hover {
+    background-color: #444; /* Lighter gray for hover effect */
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ff6f61; /* Orange-red shade */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile-section {
+    background-color: #1a1a1a; /* Darker gray for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.details h3 {
+    margin: 0 0 10px 0;
+}
+
+.details p {
+    margin: 5px 0;
+}

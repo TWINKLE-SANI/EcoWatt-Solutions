@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="customer-signup" class="signup section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Customer Sign Up</h2>
+      <p>Create your account as a customer</p>
+    </div>
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <form action="submit-customer-signup" method="post" class="signup-form">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <input type="text" name="username" class="form-control" placeholder="Username" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="col-md-6">
+            <input type="password" name="password" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="col-md-6">
+            <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+          </div>
+          <div class="col-12 text-center">
+            <a href="cuspro.html" class="button" >Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

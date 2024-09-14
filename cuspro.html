@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .profile-picture {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+        .profile-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-info li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .profile-info label {
+            font-weight: bold;
+        }
+        .edit-profile-btn,
+        .require-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .edit-profile-btn button,
+        .require-btn button {
+            background-color: #ff2929;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .edit-profile-btn button:hover,
+        .require-btn button:hover {
+            background-color: #e71111;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile-header">
+        <h2>Customer Profile</h2>
+    </div>
+    <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+    <ul class="profile-info">
+        <li><label>Name:</label> <span id="profileName">John Doe</span></li>
+        <li><label>Email:</label> <span id="profileEmail">johndoe@example.com</span></li>
+        <li><label>Location:</label> <span id="profileLocation">New York, USA</span></li>
+    </ul>
+    <div class="edit-profile-btn">
+        <button onclick="editProfile()">Edit Profile</button>
+    </div>
+    <div class="require-btn">
+        <button onclick="requirement()">Require</button>
+    </div>
+</div>
+
+<script>
+    // Function to fill in profile details based on signup data
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fetch the profile data from local storage or a server
+        const name = localStorage.getItem("customerName") || "John Doe";
+        const email = localStorage.getItem("customerEmail") || "johndoe@example.com";
+        const location = localStorage.getItem("customerLocation") || "New York, USA";
+
+        // Update the profile information on the page
+        document.getElementById("profileName").textContent = name;
+        document.getElementById("profileEmail").textContent = email;
+        document.getElementById("profileLocation").textContent = location;
+    });
+
+    function editProfile() {
+        window.location.href = "edit.html";
+    }
+
+    function requirement() {
+        window.location.href = "require.html";
+    }
+</script>
+
+</body>
+</html>

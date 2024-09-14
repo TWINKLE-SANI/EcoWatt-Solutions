@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+        }
+        .profile-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .profile-info li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .profile-info label {
+            font-weight: bold;
+        }
+        .edit-profile-btn,
+        .require-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .edit-profile-btn button,
+        .require-btn button {
+            background-color: #fc2727;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .edit-profile-btn button:hover,
+        .require-btn button:hover {
+            background-color: #eb2a1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile-header">
+        <h2>Company Profile</h2>
+    </div>
+    <img src="company-logo.jpg" alt="Company Logo" class="profile-picture">
+    <ul class="profile-info">
+        <li><label>Company Name:</label> <span id="companyName">Example Corp</span></li>
+        <li><label>Industry:</label> <span id="companyIndustry">Renewable Energy</span></li>
+        <li><label>Email:</label> <span id="companyEmail">contact@example.com</span></li>
+        <li><label>Phone:</label> <span id="companyPhone">+123 456 7890</span></li>
+        <li><label>Location:</label> <span id="companyLocation">123 Green Street, Eco City, USA</span></li>
+        <li><label>Website:</label> <span id="companyWebsite"><a href="https://www.example.com" target="_blank">www.example.com</a></span></li>
+        <li><label>Description:</label> <span id="companyDescription">Example Corp specializes in providing renewable energy solutions including solar panel installations and wind turbine setups.</span></li>
+        <li><label>Services:</label> <span id="companyServices">Solar Panels, Wind Turbines</span></li>
+    </ul>
+    <div class="edit-profile-btn">
+        <button onclick="editProfile()">Edit Profile</button>
+    </div>
+    <div class="require-btn">
+        <button onclick="requirement()">Require</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fetch the company profile data from local storage
+        const companyName = localStorage.getItem("companyName") || "Example Corp";
+        const companyIndustry = localStorage.getItem("companyIndustry") || "Renewable Energy";
+        const companyEmail = localStorage.getItem("companyEmail") || "contact@example.com";
+        const companyPhone = localStorage.getItem("companyPhone") || "+123 456 7890";
+        const companyLocation = localStorage.getItem("companyLocation") || "123 Green Street, Eco City, USA";
+        const companyWebsite = localStorage.getItem("companyWebsite") || "www.example.com";
+        const companyDescription = localStorage.getItem("companyDescription") || "Example Corp specializes in providing renewable energy solutions including solar panel installations and wind turbine setups.";
+        const companyServices = localStorage.getItem("companyServices") || "Solar Panels, Wind Turbines";
+
+        // Update the profile information on the page
+        document.getElementById("companyName").textContent = companyName;
+        document.getElementById("companyIndustry").textContent = companyIndustry;
+        document.getElementById("companyEmail").textContent = companyEmail;
+        document.getElementById("companyPhone").textContent = companyPhone;
+        document.getElementById("companyLocation").textContent = companyLocation;
+        document.getElementById("companyWebsite").innerHTML = `<a href="https://${companyWebsite}" target="_blank">${companyWebsite}</a>`;
+        document.getElementById("companyDescription").textContent = companyDescription;
+        document.getElementById("companyServices").textContent = companyServices;
+    });
+
+    function editProfile() {
+        window.location.href = "edit-company-profile.html";
+    }
+
+    function requirement() {
+        window.location.href = "require.html";
+    }
+</script>
+
+</body>
+</html>

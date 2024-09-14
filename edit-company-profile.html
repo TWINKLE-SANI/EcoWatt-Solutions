@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Company Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .edit-profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .edit-profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .edit-profile-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .edit-profile-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .edit-profile-form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .edit-profile-form input[type="text"],
+        .edit-profile-form input[type="email"],
+        .edit-profile-form input[type="tel"],
+        .edit-profile-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .edit-profile-form textarea {
+            resize: vertical;
+        }
+        .edit-profile-form button {
+            background-color: #fa1109;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .edit-profile-form button:hover {
+            background-color: #e42d20;
+        }
+        .cancel-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cancel-btn a {
+            color: #d81b1b;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .cancel-btn a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="edit-profile-container">
+    <div class="edit-profile-header">
+        <h2>Edit Company Profile</h2>
+    </div>
+    <form class="edit-profile-form" id="editCompanyProfileForm">
+        <!-- Company Name -->
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required>
+
+        <!-- Contact Email -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Contact Phone -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <!-- Company Description -->
+        <label for="description">Company Description:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <!-- Services Offered -->
+        <label for="services">Services Offered:</label>
+        <textarea id="services" name="services" rows="4" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Save Changes</button>
+    </form>
+    <div class="cancel-btn">
+        <a href="company-profile.html">Cancel</a>
+    </div>
+</div>
+
+<script>
+    // Fill form with current company profile data
+    document.addEventListener("DOMContentLoaded", function() {
+        // Fetch current company profile data from local storage
+        const companyName = localStorage.getItem("companyName") || "";
+        const email = localStorage.getItem("companyEmail") || "";
+        const phone = localStorage.getItem("companyPhone") || "";
+        const address = localStorage.getItem("companyAddress") || "";
+        const description = localStorage.getItem("companyDescription") || "";
+        const services = localStorage.getItem("companyServices") || "";
+
+        // Set the values of the form fields
+        document.getElementById("companyName").value = companyName;
+        document.getElementById("email").value = email;
+        document.getElementById("phone").value = phone;
+        document.getElementById("address").value = address;
+        document.getElementById("description").value = description;
+        document.getElementById("services").value = services;
+    });
+
+    // Handle form submission
+    document.getElementById("editCompanyProfileForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        // Get the form values
+        const companyName = document.getElementById("companyName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const address = document.getElementById("address").value;
+        const description = document.getElementById("description").value;
+        const services = document.getElementById("services").value;
+
+        // Save the updated company profile data to local storage
+        localStorage.setItem("companyName", companyName);
+        localStorage.setItem("companyEmail", email);
+        localStorage.setItem("companyPhone", phone);
+        localStorage.setItem("companyAddress", address);
+        localStorage.setItem("companyDescription", description);
+        localStorage.setItem("companyServices", services);
+
+        // Optionally, provide feedback to the user
+        alert("Profile updated successfully!");
+
+        // Redirect to company profile page
+        window.location.href = "compro.html"; // Update this as needed
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Solar/Windmill Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #dd1d16;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #df1d16;
+        }
+
+        .results {
+            margin-top: 20px;
+        }
+
+        .company {
+            background: #e9ecef;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Find the Best Company</h1>
+        <form id="requirementForm">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="budget">Budget ($):</label>
+            <input type="number" id="budget" name="budget" required>
+
+            <label for="area">Area (sq. ft):</label>
+            <input type="number" id="area" name="area" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="results" id="results">
+            <!-- All companies will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('requirementForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const location = document.getElementById('location').value;
+            const budget = document.getElementById('budget').value;
+            const area = document.getElementById('area').value;
+
+            // Example company data
+            const companies = [
+                { name: "Solar Solutions Inc.", location: "New York", minBudget: 10000, maxBudget: 50000, minArea: 100, maxArea: 1000 },
+                { name: "Green Energy Co.", location: "California", minBudget: 15000, maxBudget: 60000, minArea: 200, maxArea: 1200 },
+                { name: "EcoPower Corp.", location: "Texas", minBudget: 8000, maxBudget: 45000, minArea: 150, maxArea: 1100 },
+                { name: "WindWorks Ltd.", location: "New York", minBudget: 12000, maxBudget: 55000, minArea: 100, maxArea: 900 }
+            ];
+
+            // Display all companies
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+
+            companies.forEach(company => {
+                const companyDiv = document.createElement('div');
+                companyDiv.classList.add('company');
+                companyDiv.innerHTML = `<h3>${company.name}</h3>
+                                        <p>Location: ${company.location}</p>
+                                        <p>Budget: $${company.minBudget} - $${company.maxBudget}</p>
+                                        <p>Area: ${company.minArea} - ${company.maxArea} sq. ft.</p>`;
+                resultsDiv.appendChild(companyDiv);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

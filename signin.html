@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sign In</h1>
+  </header>
+  <main>
+    <form id="selectionForm">
+      <label for="userType">I am a:</label>
+      <select id="userType" name="userType" required>
+        <option value="">--Select--</option>
+        <option value="customer">Customer</option>
+        <option value="company">Company</option>
+      </select><br><br>
+      
+      <input type="button" value="Proceed" onclick="redirectToLogin()">
+    </form>
+  </main>
+
+  <script>
+    function redirectToLogin() {
+      const userType = document.getElementById('userType').value;
+      
+      if (userType === 'customer') {
+        window.location.href = 'customer-login.html';
+      } else if (userType === 'company') {
+        window.location.href = 'company-login.html';
+      } else {
+        alert('Please select a user type.');
+      }
+    }
+  </script>
+</body>
+</html>
+
